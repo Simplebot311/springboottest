@@ -27,7 +27,7 @@ public class SpringBootWork {
         SqlSession session = factory.openSession();
         //4.使用SqlSession创建Dao接口的代理对象
         AccountService accountService = new AccountService(session.getMapper(AccountDao.class));
-        
+
         accountService.insert(new Account("1","jack",1000,new Date(2021,3,10),new Date(2021,3,19)));
         accountService.insert(new Account("2","tom",500,new Date(2021,3,10),new Date(2021,3,21)));
         accountService.insert(new Account("3","micky",800,new Date(2021,3,10),new Date(2021,3,21)));
