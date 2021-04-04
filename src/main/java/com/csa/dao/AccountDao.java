@@ -1,6 +1,7 @@
 package com.csa.dao;
 
 import com.csa.domain.Account;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -8,6 +9,7 @@ import java.util.List;
  * @author yufeng1900
  * @create 2021-03-27 11:05
  */
+@Mapper
 public interface AccountDao {
     // 1查询所有记录
     List<Account> findAll();

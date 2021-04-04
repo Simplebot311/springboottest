@@ -1,6 +1,8 @@
-package com.csa.domain;
+package com.csa.controller;
 
 import com.csa.dao.AccountDao;
+import com.csa.domain.Account;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.sql.Date;
 import java.util.List;
@@ -9,6 +11,7 @@ import java.util.List;
  * @author yufeng1900
  * @create 2021-03-27 13:24
  */
+@Mapper
 public class AccountService {
     private AccountDao account;
 

@@ -1,4 +1,4 @@
-package com.csa.springboottest;
+package com.csa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringboottestApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringboottestApplication.class, args);
+        SpringApplication.run(SpringboottestApplication.class);
     }
 
 }
